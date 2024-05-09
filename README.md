@@ -31,7 +31,7 @@ This endpoint retrieves a paginated list of all buckets.
 ######  
     GET /api/object/list
 
-This endpoint retrieves a paginated list of all buckets.
+This endpoint retrieves a paginated list of all object from S3 and database.
 
 #### Parameters
 - page: (*optional*) Page number for pagination. Default is 1.
@@ -41,6 +41,22 @@ This endpoint retrieves a paginated list of all buckets.
 
 ######
     GET {{Host}}/api/object/list?bucketName=myBucket&page=1&limit=20&from=db
+######
+    {
+  "status": "success",
+  "data": [ 
+   {
+      "Name": BucketName",
+      "created_at": "2024-05-09T12:00:00Z",
+      ...
+    },
+    {
+      "Name": BucketName",
+      "created_at": "2024-05-08T09:30:00Z",
+      ...
+    },
+    ...
+  ],
 
 <br>
 <br> 
@@ -51,7 +67,7 @@ This endpoint retrieves a paginated list of all buckets.
 ######  
     GET /api/object/get
 
-This endpoint retrieves a paginated list of all buckets.
+This endpoint retrieves a single object from S3 and database.
 
 #### Parameters
 - key: (*required*) to retrieves file from s3.
@@ -61,12 +77,16 @@ This endpoint retrieves a paginated list of all buckets.
 ######
     GET {{Host}}/api/object/get?bucketName=myBucket&key=mykey&from=db
 
+<br>
+<br> 
+
+
 - Upload Object in S3 Bucket
 
 ######  
     POST /api/object/upload
 
-This endpoint retrieves a paginated list of all buckets.
+This endpoint upload object into S3 Bucket and Database.
 
 #### Body
 - files: (*required*) to save file in s3 and database.
@@ -77,13 +97,17 @@ This endpoint retrieves a paginated list of all buckets.
 ######
     POST {{Host}}/api/object/upload?bucketName=myBucket&key=mykey&from=db
 
+<br>
+<br> 
+
+
 
 - Delete Object from S3 Bucket
 
 ######  
     DELETE /api/object/delete
 
-This endpoint retrieves a paginated list of all buckets.
+This endpoint Delete Object from S3 Bucket and Database.
 
 #### Parameters
 - bucketName: (*required*) The name of the bucket.
