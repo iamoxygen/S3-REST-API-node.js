@@ -42,7 +42,10 @@ This endpoint retrieves a paginated list of all buckets.
 ######
     GET {{Host}}/api/object/list?bucketName=myBucket&page=1&limit=20&from=db
 
+<br>
 <br> 
+
+
 - Get Object from S3 Bucket
 
 ######  
