@@ -25,7 +25,6 @@ This endpoint will create user.
 
 #### Response
 ![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/2c59075b-a167-4ade-8325-2a0ede528c6c)
-
 <br>
 <br>
 
@@ -40,7 +39,6 @@ This endpoint will login user.
 
 #### Response
 ![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/8628dfef-0b00-4713-8dd4-39af033d9ee9)
-
 <br>
 <br>
 
@@ -48,7 +46,6 @@ This endpoint will login user.
 ######  
     POST /api/auth/logout
 This endpoint will logout user.
-
 <br>
 <br>
 
