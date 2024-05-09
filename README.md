@@ -49,6 +49,9 @@ This endpoint retrieves a paginated list of all object from S3 and database.
 
 ######
     GET {{Host}}/api/object/list?bucketName=myBucket&page=1&limit=20&from=db
+    
+#### Response
+![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/84b895dc-c22b-45aa-af5d-dbd420e97882)
 
 
 <br>
@@ -69,6 +72,10 @@ This endpoint retrieves a single object from S3 and database.
 
 ######
     GET {{Host}}/api/object/get?bucketName=myBucket&key=mykey&from=db
+
+#### Response
+######
+    stream respones
 
 <br>
 <br> 
@@ -92,8 +99,8 @@ This endpoint upload object into S3 Bucket and Database.
 
 <br>
 <br> 
-
-
+#### Response
+![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/965982d6-8209-435e-a91d-49fcfda0e06b)
 
 - Delete Object from S3 Bucket
 
@@ -107,4 +114,8 @@ This endpoint Delete Object from S3 Bucket and Database.
 
 ######
     DELETE {{Host}}/api/object/delete?bucketName=myBucket&key=mykey
+
+#### Response
+![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/35e97040-e55a-482f-9311-f3285e5508e5)
+
 
