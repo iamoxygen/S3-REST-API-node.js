@@ -7,10 +7,16 @@ const {
 } = require("../controller/s3-Objects");
 
 const upload = require("../config/multer");
+const { requireSignIn } = require("../middleware/auth");
 
-router.post("/object/upload", upload.single("files"), uploadObject);
-router.get("/object/get", getObject);
-router.get("/object/list", listObject);
-router.delete("/object/delete", deleteObject);
+router.post(
+  "/object/upload",
+  requireSignIn,
+  upload.single("files"),
+  uploadObject
+);
+router.get("/object/get", requireSignIn, getObject);
+router.get("/object/list", requireSignIn, listObject);
+router.delete("/object/delete", requireSignIn, deleteObject);
 
 module.exports = router;

@@ -7,10 +7,10 @@ const AWSCredentials = {
 };
 
 const client = new S3Client({
-  region: AWSCredentials.region,
+  region: AWSCredentials?.region ?? "",
   credentials: {
-    accessKeyId: AWSCredentials.accessKey,
-    secretAccessKey: AWSCredentials.secret,
+    accessKeyId: AWSCredentials?.accessKey ?? "",
+    secretAccessKey: AWSCredentials?.secret ??  "",
   },
   signatureVersion: "v4",
 });
