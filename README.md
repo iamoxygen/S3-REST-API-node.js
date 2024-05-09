@@ -42,21 +42,8 @@ This endpoint retrieves a paginated list of all object from S3 and database.
 ######
     GET {{Host}}/api/object/list?bucketName=myBucket&page=1&limit=20&from=db
 ######
-    {
-  "status": "success",
-  "data": [ 
-   {
-      "Name": BucketName",
-      "created_at": "2024-05-09T12:00:00Z",
-      ...
-    },
-    {
-      "Name": BucketName",
-      "created_at": "2024-05-08T09:30:00Z",
-      ...
-    },
-    ...
-  ],
+![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/af83665c-ade2-4bb1-bace-680d2296405e)
+
 
 <br>
 <br> 
