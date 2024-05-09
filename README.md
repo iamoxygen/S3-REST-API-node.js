@@ -41,7 +41,8 @@ This endpoint retrieves a paginated list of all object from S3 and database.
 
 ######
     GET {{Host}}/api/object/list?bucketName=myBucket&page=1&limit=20&from=db
-######
+
+#### Response
 ![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/af83665c-ade2-4bb1-bace-680d2296405e)
 
 
