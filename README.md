@@ -24,6 +24,14 @@ This endpoint retrieves a paginated list of all buckets.
 - page: (*optional*) Page number for pagination. Default is 1.
 - limit: (*optional*) Number of items per page. Default is 10.
 
+#### Response
+![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/af83665c-ade2-4bb1-bace-680d2296405e)
+
+<br>
+<br>
+<br>
+
+
 #### Objects
 
 - List All Object in Bucket
@@ -41,9 +49,6 @@ This endpoint retrieves a paginated list of all object from S3 and database.
 
 ######
     GET {{Host}}/api/object/list?bucketName=myBucket&page=1&limit=20&from=db
-
-#### Response
-![image](https://github.com/iamoxygen/S3-REST-API-node.js/assets/43597178/af83665c-ade2-4bb1-bace-680d2296405e)
 
 
 <br>
